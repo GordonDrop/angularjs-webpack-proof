@@ -1,7 +1,9 @@
 const path = require('path');
+const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
+const {presets} = require('./babel.config');
 
 module.exports = {
   mode: 'production',
@@ -12,6 +14,20 @@ module.exports = {
     path: path.resolve(__dirname, './dist'),
     filename: 'js/[name].[contenthash].js'
   },
+
+  module: {
+    rules: [
+      {
+        test: /\.m?js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader',
+          options: require('./babel.config')
+        }
+      }
+    ]
+  },
+
   optimization: {
     noEmitOnErrors: true,
     nodeEnv: 'production',
@@ -26,6 +42,7 @@ module.exports = {
       })
     ]
   },
+
   plugins: [
     new CleanWebpackPlugin(['dist']),
     new HtmlWebpackPlugin({template: './src/index.html'}),

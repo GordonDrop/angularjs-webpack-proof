@@ -19,6 +19,19 @@ module.exports = {
     port: 3000
   },
 
+  module: {
+    rules: [
+      {
+        test: /\.m?js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader',
+          options: require('./babel.config')
+        }
+      }
+    ]
+  },
+
   plugins: [
     new webpack.NamedModulesPlugin(),
     new webpack.NamedChunksPlugin(),
