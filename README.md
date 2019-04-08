@@ -4,7 +4,7 @@
 - [x] Add babel
 - [x] Add eslint
 - [x] multiple modules
-- [ ] directives, services
+- [ ] directives, services examples
 - [ ] ui router with several events
 - [ ] merge configs
 - [ ] Add unit tests
