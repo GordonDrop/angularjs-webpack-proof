@@ -24,10 +24,7 @@ module.exports = {
       {
         test: /\.m?js$/,
         exclude: /node_modules/,
-        use: {
-          loader: 'babel-loader',
-          options: require('./babel.config')
-        }
+        use: ['babel-loader', 'eslint-loader']
       }
     ]
   },
