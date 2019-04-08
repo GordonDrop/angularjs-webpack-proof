@@ -1,7 +1,7 @@
 import template from './about.template.html';
 
 class AboutController {
-  /* ngInject */
+  /* @ngInject */
   constructor($stateParams) {
     this.username = $stateParams.username;
   }
