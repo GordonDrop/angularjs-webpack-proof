@@ -1,17 +1,8 @@
-export function routesConfig($stateProvider, $urlRouterProvider) {
+export default function routesConfig($stateProvider, $urlRouterProvider) {
   $stateProvider
     .state('app', {
       abstract: true,
-      template: `
-        <nav>
-          <ul>
-            <li><a ui-sref="app.home">Home</a></li>
-            <li><a ui-sref="app.about">About</a></li>
-          </ul>
-        </nav>
-        
-        <ui-view></ui-view>
-      `,
+      template: '<app></app>',
     })
     .state('app.home', {
       url: '/',

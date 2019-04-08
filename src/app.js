@@ -1,7 +1,5 @@
 import '@babel/polyfill';
 import angular from 'angular';
-import uirouter from '@uirouter/angularjs';
+import AppCore from './modules/core';
 
-import { routesConfig } from './app.routes';
-
-angular.module('app', [uirouter]).config(routesConfig);
+angular.module('app', [AppCore]);
