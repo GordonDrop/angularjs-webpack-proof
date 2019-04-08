@@ -1,12 +1,7 @@
 import '@babel/polyfill';
 import angular from 'angular';
+import uirouter from '@uirouter/angularjs';
 
-function HomeController() {
-  const $ctrl = this;
+import { routesConfig } from './app.routes';
 
-  $ctrl.greeting = 'Hello world';
-  $ctrl.username = 'Username';
-}
-
-angular.module('app', [])
-  .controller('HomeController', HomeController);
+angular.module('app', [uirouter]).config(routesConfig);
