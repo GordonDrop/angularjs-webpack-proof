@@ -1,3 +1,4 @@
+/* @ngInject */
 export default function routesConfig($stateProvider, $urlRouterProvider) {
   $stateProvider.state('app', {
     abstract: true,
@@ -6,5 +7,3 @@ export default function routesConfig($stateProvider, $urlRouterProvider) {
 
   $urlRouterProvider.otherwise('/');
 }
-
-routesConfig.$inject = ['$stateProvider', '$urlRouterProvider'];

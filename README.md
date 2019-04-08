@@ -3,8 +3,8 @@
 - [x] Create dev and prod configs
 - [x] Add babel
 - [x] Add eslint
-- [ ] multiple modules
-- [ ] ui router with several events
+- [x] multiple modules
 - [ ] directives, services
+- [ ] ui router with several events
 - [ ] merge configs
 - [ ] Add unit tests

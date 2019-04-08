@@ -1,8 +1,9 @@
 import template from './about.template.html';
 
 class AboutController {
-  constructor() {
-    this.username = 'User';
+  /* ngInject */
+  constructor($stateParams) {
+    this.username = $stateParams.username;
   }
 }
 

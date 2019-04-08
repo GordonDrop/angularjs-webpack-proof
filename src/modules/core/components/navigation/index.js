@@ -3,7 +3,8 @@ import template from './navigation.template.html';
 class NavigationController {
   constructor() {
     this.states = {
-      'app.about': 'About',
+      'app.about({username: "Bob"})': 'About Bob',
+      'app.about({username: "Alice"})': 'About Alice',
       'app.home': 'Home',
     };
   }
