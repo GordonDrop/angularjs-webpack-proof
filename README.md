@@ -4,7 +4,8 @@
 - [x] Add babel
 - [x] Add eslint
 - [x] multiple modules
-- [ ] directives, services examples
+- [x] directives examples
+- [ ] services examples
+- [ ] Add test config and test suite (Karma or Jest???)
 - [ ] ui router with several events
 - [ ] merge configs
-- [ ] Add unit tests
