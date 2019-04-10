@@ -1,8 +1,20 @@
 import template from './home.template.html';
 
 class HomeController {
-  constructor() {
-    this.username = 'User';
+  num1 = null;
+
+  num2 = null;
+
+  result = null;
+
+  username = 'User';
+
+  constructor(AdderFactory) {
+    this.AdderFactory = AdderFactory;
+  }
+
+  add() {
+    this.result = this.AdderFactory.add(this.num1, this.num2);
   }
 }
 

@@ -13,6 +13,10 @@ const presets = [
   ],
 ];
 
-const plugins = ['@babel/plugin-transform-runtime', ['angularjs-annotate', { explicitOnly: true }]];
+const plugins = [
+  '@babel/plugin-transform-runtime',
+  '@babel/plugin-proposal-class-properties',
+  ['angularjs-annotate', { explicitOnly: true }],
+];
 
 module.exports = { presets, plugins };

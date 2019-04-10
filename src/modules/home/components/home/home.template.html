@@ -1,3 +1,20 @@
 <h1>Home</h1>
 
 <div>Hello, {{$ctrl.username}}</div>
+
+<form
+  ng-submit="$ctrl.add()"
+  novalidate
+>
+  <label for="num1">Number 1</label>
+  <input type="number" name="num1" id="num1" ng-model="$ctrl.num1">
+
+  <label for="num2">Number 2</label>
+  <input type="number" name="num2" id="num2" ng-model="$ctrl.num2">
+
+  <button type="submit">Add</button>
+</form>
+
+<div ng-if="$ctrl.result">
+  Result: {{$ctrl.result}}
+</div>
