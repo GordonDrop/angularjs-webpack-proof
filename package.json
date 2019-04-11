@@ -15,8 +15,7 @@
   "dependencies": {
     "@babel/polyfill": "^7.2.5",
     "@uirouter/angularjs": "^1.0.22",
-    "angular": "^1.7.7",
-    "source-map-explorer": "^1.8.0"
+    "angular": "^1.7.7"
   },
   "devDependencies": {
     "@babel/cli": "^7.2.3",
