@@ -6,5 +6,5 @@
 - [x] multiple modules
 - [x] directives examples
 - [x] services examples
-- [ ] Add test config and test suite
-- [ ] merge configs
+- [x] Add test config and test suite
+- [x] merge configs
