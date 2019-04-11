@@ -1,6 +1,6 @@
 import '../index';
 
-describe('Math service - addTwoNumbers', function() {
+describe('AdderFactory', function() {
   beforeEach(angular.mock.module('app.home'));
 
   let _AdderFactory;
