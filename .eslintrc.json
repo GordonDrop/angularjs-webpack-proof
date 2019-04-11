@@ -5,7 +5,25 @@
     "prettier"
   ],
   "plugins": [
-    "prettier"
+    "prettier",
+    "jest"
+  ],
+  "overrides": [
+    {
+      "files": ["*.spec.js"],
+      "plugins": [
+        "angular",
+        "prettier",
+        "jest"
+      ],
+      "env": {
+        "jest/globals": true
+      },
+      "globals": {
+        "angular": true,
+        "inject": true
+      }
+    }
   ],
   "rules": {
     "import/prefer-default-export": false,

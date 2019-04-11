@@ -5,7 +5,6 @@
 - [x] Add eslint
 - [x] multiple modules
 - [x] directives examples
-- [ ] services examples
-- [ ] Add test config and test suite (Karma or Jest???)
-- [ ] ui router with several events
+- [x] services examples
+- [ ] Add test config and test suite
 - [ ] merge configs
