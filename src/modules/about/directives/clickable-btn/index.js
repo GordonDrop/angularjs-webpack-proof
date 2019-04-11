@@ -8,7 +8,6 @@ function clickableBtn($timeout) {
     scope: {
       message: '=',
     },
-    /* @ngInject */
     link($scope) {
       $scope.cnt = 0;
       $scope.cntMessage = 'Not clicked.';

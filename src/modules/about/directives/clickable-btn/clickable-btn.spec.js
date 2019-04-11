@@ -8,14 +8,15 @@ describe('Should test button', function() {
     angular.mock.module('app.about');
 
     inject(($compile, $rootScope) => {
-      _$el = $compile('<clickable-btn></clickable-btn>')($rootScope);
+      _$el = $compile('<clickable-btn messsage="\'testMessage\'"></clickable-btn>')($rootScope);
+      $rootScope.$digest();
       $rootScope.$digest();
     });
   });
 
   it('Correctly rendered', () => {
     const actualMessageContent = _$el.html();
-    expect(actualMessageContent).toContain('Not clicked.');
     expect(actualMessageContent).toContain('Click me fast.');
+    expect(actualMessageContent).toContain('Not clicked.');
   });
 });

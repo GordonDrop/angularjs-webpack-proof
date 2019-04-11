@@ -2,11 +2,7 @@ const targets = {};
 
 const presets = [['@babel/env', { targets }]];
 
-const plugins = [
-  '@babel/plugin-transform-runtime',
-  '@babel/plugin-proposal-class-properties',
-  ['angularjs-annotate', { explicitOnly: true }],
-];
+const plugins = ['@babel/plugin-transform-runtime', '@babel/plugin-proposal-class-properties', ['angularjs-annotate']];
 
 module.exports = api => {
   const isTestEnv = api.env('test');
