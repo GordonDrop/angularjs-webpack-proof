@@ -1,6 +1,7 @@
 import template from './navigation.template.html';
 
 class NavigationController {
+  /* @ngInject */
   constructor() {
     this.states = {
       'app.about({username: "Bob"})': 'About Bob',

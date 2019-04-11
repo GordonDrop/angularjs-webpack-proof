@@ -9,6 +9,7 @@ class HomeController {
 
   username = 'User';
 
+  /* @ngInject */
   constructor(AdderFactory) {
     this.AdderFactory = AdderFactory;
   }
