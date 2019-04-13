@@ -8,6 +8,9 @@
     "prettier",
     "jest"
   ],
+  "env": {
+    "browser": true
+  },
   "overrides": [
     {
       "files": ["*.spec.js"],
@@ -95,24 +98,5 @@
 
     // name function only in case its a recursive function
     "func-names": 0
-//    "promise/valid-params": "off",
-//    "promise/always-return": "off",
-//    "promise/no-return-wrap": "error",
-//    "promise/param-names": "error",
-//    "promise/catch-or-return": "error",
-//    "promise/no-native": "off",
-//    "promise/no-nesting": "warn",
-//    "promise/no-promise-in-callback": "warn",
-//    "promise/no-callback-in-promise": [
-//      "warn",
-//      {
-//        "exceptions": [
-//          "next"
-//        ]
-//      }
-//    ],
-//    "promise/avoid-new": "warn",
-//    "promise/no-new-statics": "error",
-//    "promise/no-return-in-finally": "warn"
   }
 }

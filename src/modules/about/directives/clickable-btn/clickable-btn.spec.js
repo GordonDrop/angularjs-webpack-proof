@@ -10,7 +10,6 @@ describe('Should test button', function() {
     inject(($compile, $rootScope) => {
       _$el = $compile('<clickable-btn messsage="\'testMessage\'"></clickable-btn>')($rootScope);
       $rootScope.$digest();
-      $rootScope.$digest();
     });
   });
 
